@@ -1,4 +1,144 @@
-*{
-margin: 0%;
-padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: 0%;
+}
+body {
+  background-color: rgb(220, 220, 240);
+}
+
+.container {
+  width: 80%;
+  max-width: 1500px;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin: auto;
+}
+
+.container .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.container .grid .formEncrypt .encrypt {
+  border: 0px;
+  border-radius: 5px;
+  width: 80%;
+  height: 100%;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.container .grid .formEncrypt .btn-Encrypt {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(66, 66, 231);
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+
+
+.container .grid .formEncrypt .btnEncrypt {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(201, 201, 211);
+  border: 0px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  margin-left: 5px;
+  border: 1px solid black;
+}
+
+.container .grid .formEncrypt .btn-Encrypt:hover {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(76, 76, 204);
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.container .grid .formEncrypt .btnEncrypt:hover {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(232, 232, 240);
+  border: 0px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.container .grid .positionRelartiva {
+  position: relative;
+}
+
+.container .grid .positionRelartiva .floatCenter {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container .grid .positionRelartiva .floatCenterText {
+  position: absolute;
+  top: 650px;
+  left: 100px;
+}
+
+.card {
+  background-color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 80%;
+  height: 700px;
+  padding: 10px;
+}
+
+.card .btnEncrypt {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(204, 204, 219);
+  border: 0px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  margin-left: 5px;
+  border: 1px solid black;
+} 
+.card .btnEncrypt:hover {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(232, 232, 240);
+  border: 0px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  .container .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  .container .grid .formEncrypt {
+    margin-top: 50px;
+  margin-bottom: 50px;
+  }
 }

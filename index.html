@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/stylus.css">
-</head>
-<body>
-     <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto con javascript 🔏
+    </title>
+    <link rel="stylesheet" href="/stylus.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/assets/img/Vector.svg" alt="" srcset="" />
         <h1></h1>
-     </header>
-     <article>
-        
-     </article>
+      </header>
+      <article class="grid">
+        <form id="encriptar" class="formEncrypt">
+            <input type="text" autocomplete="off" class="encrypt" placeholder="Ingrese el texto aqui" name="textEncrypt" id="textEncrypt" >
+            <button id="btnEncrypt" class="btn-Encrypt">
+                Encriptar
+            </button>
+            <button id="btnDesEncrypt" class="btnEncrypt">
+                Desencriptar
+            </button>
+        </form>
+        <aside id="textEncryptHidden" class="card">
+         <p  class="card" id="textEncryptResult">
+         </p>
+
+         <button id="bntmCopy" class="btnEncrypt">
+          Copiar
+      </button>
+        </aside>
+        <aside id="positionRelartiva" class="positionRelartiva">
+          <img class="imgPricipal" width="450"  src="/assets/img/Rectangle 1.svg" alt="" />
+          <img class="floatCenter" src="/assets/img/Muñeco.png" alt="" />
+          <div class="floatCenterText">
+            <h4 class="titleText">
+              <strong>
+                Ningún mensaje fue encontrado     
+              </strong>        
+            </h4>
+            <small class="subTitleText">
+              Ingresa el texto que encriptar o desencriptar.
+            </small>
+          </div>        
+          
+        </aside>
+      </article>
+    </div>
     <script src="/main.js"></script>
-</body>
+  </body>
 </html>
