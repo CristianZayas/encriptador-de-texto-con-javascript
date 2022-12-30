@@ -23,7 +23,9 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.red {
+  color: red;
+}
 .container .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,6 +38,8 @@ body {
   width: 80%;
   height: 100%;
   margin-bottom: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
   text-decoration: none;
 }
 .container .grid .formEncrypt .btn-Encrypt {
