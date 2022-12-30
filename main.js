@@ -7,12 +7,7 @@ document.querySelector("#btnEncrypt").addEventListener("click", (e) => {
   document.querySelector("#textEncryptHidden").style.display = "block";
   document.querySelector("#positionRelartiva").style.display = "none";
   let resultText = document.querySelector("#textEncrypt").value;
-  console.log(String(document.querySelector("#textEncrypt").value).trim());
-  console.log(
-    /^([a-z])+([a-z])$/g.test(
-      String(document.querySelector("#textEncrypt").value).trim()
-    )
-  );
+  
   if (
     !/^([a-z])+([a-z])$/g.test(
       String(document.querySelector("#textEncrypt").value).trim()
